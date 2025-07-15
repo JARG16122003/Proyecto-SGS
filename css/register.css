@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    background-color: #ff8c00;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.register-container{
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 425px;
+    height: 500px;
+}
+
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.subtitle{
+    font-weight: bolder;
+    font-size: medium;
+    color: #bbb;
+
+}
+
+.register-form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+input{
+    width: 300px;
+    padding: 10px;
+    margin: 5px 0px 15px 0px;
+    height: auto;
+    border: #cccccc;
+    border-radius: 5px;
+}
+
+
+input:focus{
+    outline: none;
+}
+
+button{
+    background-color: #ff8c00;
+    border: none;
+    margin: 10px 0px 10px 0px;
+    border-radius: 5px;
+    height: 30px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+.login-link{
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #ff8c00;
+    transition: color 0.3s ease;
+    font-size: 15px;
+}
+
+a:hover{
+    color: #cccccc;
+}
+
+
