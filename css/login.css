@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color: #ff8c00;
+    background: linear-gradient(135deg, #1e3c2e, #3fa250);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -56,7 +56,7 @@ input:focus{
 }
 
 button{
-    background-color: #ff8c00;
+    background-color: #43d17a;
     border: none;
     margin: 10px 0px 15px 0px;
     border-radius: 5px;
@@ -77,11 +77,11 @@ button:hover{
 
 a{
     text-decoration: none;
-    color: #ff8c00;
+    color: #43d17a;
     transition: color 0.3s ease;
     font-size: 15px;
 }
 
 a:hover{
-    color: #cccccc;
+    color: #3fa250;
 }
