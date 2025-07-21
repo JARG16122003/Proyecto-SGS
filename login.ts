@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
     
-    if (email === 'admin@algo.com' && password === 'admin') {
+    if (email === 'admin@correo.com' && password === 'admin') {
       window.location.href = 'admin.html';
       return;
     }
