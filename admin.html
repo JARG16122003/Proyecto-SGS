@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="admin.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-panel">
+        <header class="header">
+            <h1>Panel de Administración</h1>
+            <p>Bienvenido, Administrador!</p>
+            <div class="header-actions">
+                <button class="btn primary">
+                    <span class="material-icons">person_add</span> Mis notificaciones
+                </button>
+                <button class="btn secondary">
+                    <span class="material-icons">logout</span> Cerrar sesión
+                </button>
+            </div>
+        </header>
+
+        <section class="dashboard-stats">
+            <div class="stat-card">
+                <div class="stat-content">
+                    <p class="stat-label">Atletas Registrados</p>
+                    <p class="stat-value" id="atletasRegistrados">247</p>
+                </div>
+                <div class="stat-icon icon-blue">
+                    <span class="material-icons">groups</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-content">
+                    <p class="stat-label">Eventos Activos</p>
+                    <p class="stat-value" id="eventosActivos">12</p>
+                </div>
+                <div class="stat-icon icon-green">
+                    <span class="material-icons">event</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-content">
+                    <p class="stat-label">Competencias</p>
+                    <p class="stat-value" id="competencias">8</p>
+                </div>
+                <div class="stat-icon icon-orange">
+                    <span class="material-icons">emoji_events</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-content">
+                    <p class="stat-label">Instalaciones</p>
+                    <p class="stat-value" id="instalaciones">15</p>
+                </div>
+                <div class="stat-icon icon-purple">
+                    <span class="material-icons">place</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="facility-management">
+            <h2>Gestión de Instalaciones</h2>
+            <div class="facility-cards">
+                <div class="facility-card">
+                    <div class="facility-header">
+                        <div class="facility-icon icon-orange-light">
+                            <span class="material-icons">fitness_center</span>
+                        </div>
+                        <h3>Gimnasio Central</h3>
+                        <div class="status-indicator online"></div>
+                    </div>
+                    <p class="facility-location">
+                        <span class="material-icons icon-small">place</span>
+                        Centro deportivo principal
+                    </p>
+                    <p class="facility-records">Registros activos: <span id="gimnasioRegistros">45</span></p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-header">
+                        <div class="facility-icon icon-orange-light">
+                            <span class="material-icons">sports_soccer</span>
+                        </div>
+                        <h3>Cancha de Fútbol Norte</h3>
+                        <div class="status-indicator online"></div>
+                    </div>
+                    <p class="facility-location">
+                        <span class="material-icons icon-small">place</span>
+                        Complejo deportivo norte
+                    </p>
+                    <p class="facility-records">Registros activos: <span id="futbolRegistros">78</span></p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-header">
+                        <div class="facility-icon icon-orange-light">
+                            <span class="material-icons">pool</span>
+                        </div>
+                        <h3>Piscina Olímpica</h3>
+                        <div class="status-indicator offline"></div>
+                    </div>
+                    <p class="facility-location">
+                        <span class="material-icons icon-small">place</span>
+                        Centro acuático
+                    </p>
+                    <p class="facility-records">Registros activos: <span id="piscinaRegistros">23</span></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.ts"></script>
+</body>
+</html>

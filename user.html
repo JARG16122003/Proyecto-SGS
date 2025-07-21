@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido, elprogramadordeltiempo</title>
+    <link rel="stylesheet" href="user.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="user-panel">
+        <header class="user-header">
+            <div class="user-info">
+                <h1>Bienvenido, elprogramadordeltiempo</h1>
+                <p>Encuentra y regístrate en instalaciones deportivas</p>
+            </div>
+            <div class="header-actions">
+                <button class="btn secondary">
+                    <span class="material-icons">logout</span> Cerrar sesión
+                </button>
+            </div>
+        </header>
+
+        <section class="search-section">
+            <h2>Buscar Instalaciones</h2>
+            <p>Encuentra instalaciones deportivas disponibles</p>
+            <div class="search-input-container">
+                <span class="material-icons search-icon">search</span>
+                <input type="text" id="searchInput" placeholder="Buscar por nombre o tipo de instalación...">
+            </div>
+        </section>
+
+        <section class="facility-list" id="facilityList">
+            </section>
+    </div>
+
+    <div id="facilityDetailsModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-btn details-close-btn">×</button>
+            <h2 id="modalFacilityName"></h2>
+            <p id="modalFacilityType" class="facility-type"></p>
+            <p id="modalFacilityDescription"></p>
+            <p id="modalFacilityLocation" class="facility-location"></p>
+            <div class="modal-status">
+                Estado: <span id="modalFacilityStatusText"></span>
+                <div id="modalFacilityStatusIndicator" class="status-indicator"></div>
+            </div>
+            <div class="modal-map-container">
+                <h3>Ubicación en el Mapa</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15866.699042502698!2d-74.08906915!3d4.6025348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99011e402773%3A0x770ef1a533166258!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="modal-actions">
+                <button class="btn primary register-btn-from-details" id="modalRegisterBtn">Registrarse</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="registrationModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-btn registration-close-btn">×</button>
+            <h2>Registrarse en <span id="regFacilityName"></span></h2>
+            <p class="facility-type" id="regFacilityType"></p>
+            <p id="regFacilityDescription"></p>
+
+            <form id="registrationForm" class="registration-form">
+                <div class="form-group">
+                    <label for="regDate">Fecha:</label>
+                    <input type="date" id="regDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="regTime">Hora:</label>
+                    <input type="time" id="regTime" required>
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="btn secondary cancel-reg-btn">Cancelar</button>
+                    <button type="submit" class="btn primary confirm-reg-btn">Confirmar Registro</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 elprogramadordeltiempo. Todos los derechos reservados.</p>
+        <p>Contacto: info@elprogramadordeltiempo.com</p>
+    </footer>
+
+    <script src="user.js"></script>
+</body>
+</html>

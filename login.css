@@ -42,12 +42,13 @@ label{
     font-weight: bolder;
 }
 
-input{
+/* login.css y register.css */
+input {
     width: 300px;
     padding: 10px;
     margin: 5px 0px 15px 0px;
     height: auto;
-    border: #cccccc;
+    border: 1px solid #cccccc; /* Corregido */
     border-radius: 5px;
 }
 

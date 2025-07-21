@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --primary-color: #ff6a00; 
+    --secondary-color: #e0e0e0; 
+    --background-color: #f5f5f5; 
+    --card-background: #ffffff;
+    --text-color-dark: #333333;
+    --text-color-light: #666666;
+    --border-color: #eeeeee;
+
+    --blue-icon: #5c6bc0;
+    --green-icon: #66bb6a;
+    --orange-icon: #ff9800;
+    --purple-icon: #9575cd;
+
+    --status-online: #66bb6a; 
+    --status-offline: #ef5350; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color-dark);
+}
+
+.admin-panel {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: var(--card-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.header p {
+    margin: 0;
+    color: var(--text-color-light);
+    font-size: 16px;
+}
+
+.header-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn.primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn.primary:hover {
+    background-color: #e65100; /* Darker orange */
+}
+
+.btn.secondary {
+    background-color: var(--secondary-color);
+    color: var(--text-color-dark);
+}
+
+.btn.secondary:hover {
+    background-color: #c0c0c0; /* Darker gray */
+}
+
+.material-icons {
+    font-size: 20px;
+}
+
+/* Dashboard Stats */
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background-color: var(--card-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat-card .stat-label {
+    font-size: 15px;
+    color: var(--text-color-light);
+    margin-bottom: 5px;
+}
+
+.stat-card .stat-value {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--text-color-dark);
+}
+
+.stat-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stat-icon .material-icons {
+    color: white;
+    font-size: 28px;
+}
+
+.icon-blue { background-color: var(--blue-icon); }
+.icon-green { background-color: var(--green-icon); }
+.icon-orange { background-color: var(--orange-icon); }
+.icon-purple { background-color: var(--purple-icon); }
+
+/* Facility Management */
+.facility-management h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--text-color-dark);
+}
+
+.facility-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.facility-card {
+    background-color: var(--card-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.facility-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.facility-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.facility-icon .material-icons {
+    color: white;
+    font-size: 22px;
+}
+
+.icon-orange-light {
+    background-color: #ffab40; /* Lighter orange */
+}
+
+.facility-header h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    flex-grow: 1;
+}
+
+.status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.status-indicator.online {
+    background-color: var(--status-online);
+}
+
+.status-indicator.offline {
+    background-color: var(--status-offline);
+}
+
+.facility-location,
+.facility-records {
+    display: flex;
+    align-items: center;
+    color: var(--text-color-light);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.facility-location .material-icons.icon-small {
+    font-size: 16px;
+    margin-right: 5px;
+    color: var(--text-color-light);
+}
+
+.facility-records {
+    margin-top: 10px;
+    font-weight: 500;
+}
