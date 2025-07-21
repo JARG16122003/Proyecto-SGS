@@ -20,6 +20,11 @@ body{
     height: 500px;
 }
 
+.logo{
+   width: 40px; 
+   border-radius: 8px;
+}
+
 .title{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;

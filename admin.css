@@ -16,6 +16,9 @@
 
     --status-online: #66bb6a; 
     --status-offline: #ef5350; 
+
+    --button-color: #43d17a;
+    --bg-icon-color: #43d17a;
 }
 
 body {
@@ -75,13 +78,20 @@ body {
 }
 
 .btn.primary {
-    background-color: var(--primary-color);
+    background-color: var(--button-color);
     color: white;
 }
 
 .btn.primary:hover {
-    background-color: #e65100; /* Darker orange */
+    background-color: #2BB25F; /* Darker orange */
 }
+
+.logout-button, .logout-button:visited{
+    text-decoration: none;
+    color: #333333;
+}
+
+
 
 .btn.secondary {
     background-color: var(--secondary-color);
@@ -190,7 +200,7 @@ body {
 }
 
 .icon-orange-light {
-    background-color: #ffab40; /* Lighter orange */
+    background-color: #43d17a; /* Lighter orange */
 }
 
 .facility-header h3 {

@@ -10,12 +10,15 @@
     --text-color-light: #666666;
     --border-color: #eeeeee;
     --input-border-color: #cccccc;
-    --footer-bg-color: #333333;
+    --footer-bg-color: #43d17a;
     --footer-text-color: #ffffff;
 
     --status-online: #66bb6a;
     --status-offline: #ef5350;
-    --icon-bg-color: #ffab40;
+    --icon-bg-color: #43d17a;
+    --button-color: #43d17a;
+    --text-button-color: #ffffff;
+    --text-p: #43d17a;
 }
 
 body {
@@ -79,17 +82,17 @@ body {
 }
 
 .btn.primary {
-    background-color: var(--primary-color);
+    background-color: var(--button-color);
     color: white;
 }
 
 .btn.primary:hover {
-    background-color: #e65100;
+    background-color: #2BB25F;
 }
 
 .btn.secondary {
-    background-color: var(--secondary-color);
-    color: var(--text-color-dark);
+    background-color: var(--button-color);
+    color: var(--text-button-color);
 }
 
 .btn.secondary:hover {
@@ -219,7 +222,7 @@ body {
 
 .facility-type {
     font-size: 14px;
-    color: var(--primary-color);
+    color: var(--text-p);
     font-weight: 500;
     margin-bottom: 5px;
 }
